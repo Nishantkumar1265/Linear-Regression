@@ -1,10 +1,10 @@
-#Importing libraries
+# Importing libraries
 
 import numpy as np
 import matplotlib.pyplot as plt
 
 
-#Generating data
+# Generating data
 
 y = 2x-5+e, where e=epsilon
 
@@ -14,7 +14,7 @@ y = 2 * x - 5 + rng.randn(50)
 plt.scatter(x, y);
 plt.show()
 
-#Applying Least Square Estimation
+# Applying Least Square Estimation
 
 X_mean = np.mean(x)
 Y_mean = np.mean(y)
@@ -32,13 +32,13 @@ print (m, c)
 Y_pred = m*x + c
 
 plt.scatter(x, y) # actual
-#plt.scatter(x, Y_pred, color='red')
+plt.scatter(x, Y_pred, color='red')
 plt.plot([min(x), max(x)], [min(Y_pred), max(Y_pred)], color='red') # predicted
 plt.show()
 
 
 
-#Performance Metrics
+# Performance Metrics
 
 from sklearn.metrics import r2_score
 r2_score(y, Y_pred) #r2_score(y_true, y_pred)
@@ -46,7 +46,7 @@ r2_score(y, Y_pred) #r2_score(y_true, y_pred)
 from sklearn.metrics import mean_squared_error
 mean_squared_error(y, Y_pred)
 
-#Using Sklearn library
+# Using Sklearn library
 
 from sklearn.linear_model import LinearRegression
 model = LinearRegression(fit_intercept=True)
@@ -93,7 +93,7 @@ print("Model intercept:", model.intercept_)
 
 
 
-#Performance Metrics
+# Performance Metrics
 
 
 
@@ -103,7 +103,7 @@ mean_squared_error(y, yfit)
 from sklearn.metrics import r2_score
 r2_score(y, yfit)
 
-#using datasets
+# using datasets
 
 import matplotlib.pyplot as plt
 import numpy as np
